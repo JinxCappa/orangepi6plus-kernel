@@ -1,0 +1,1 @@
+# orangepi6plus-kernel
