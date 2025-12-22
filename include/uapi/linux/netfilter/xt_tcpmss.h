@@ -1,0 +1,20 @@
+/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+#ifndef _XT_TCPMSS_MATCH_H
+#define _XT_TCPMSS_MATCH_H
+
+#include <linux/types.h>
+
+/* Match info for xt_tcpmss match module */
+struct xt_tcpmss_match_info {
+	__u16 mss_min, mss_max;
+	__u8 invert;
+};
+
+/* Target info for xt_TCPMSS target module */
+struct xt_tcpmss_info {
+	__u16 mss;
+};
+
+#define XT_TCPMSS_CLAMP_PMTU 0xffff
+
+#endif /* _XT_TCPMSS_MATCH_H */
